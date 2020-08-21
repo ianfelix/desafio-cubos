@@ -21,3 +21,18 @@ input {
   background: none;
   font-family: sans-serif;
 }
+
+html {
+  background: white;
+}
+
+:root {
+  --primary: #f2f2f2;
+  --secondary: #bbbabd;
+  --text-title: #79edeb;
+  --text-subtitle: #116193;
+  --text: #6f6f6f;
+}
+/* 
+font-family: 'Abel', sans-serif;
+font-family: 'Lato', sans-serif; */
