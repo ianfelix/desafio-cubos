@@ -1,8 +1,9 @@
 h1 {
-  background-color: var(--text-subtitle);
   color: var(--text-title);
+  background-color: var(--text-subtitle);
   height: 65px;
   display: flex;
   align-items: center;
   justify-content: center;
+  font-family: 'Abel', sans-serif;
 }

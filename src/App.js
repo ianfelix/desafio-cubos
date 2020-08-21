@@ -1,15 +1,13 @@
 import React from 'react';
 import './styles/GlobalStyles.css';
 import Header from './components/Header';
+import Input from './components/Input';
 
 function App() {
   return (
     <>
       <Header title='Movies' />
-      <input
-        type='text'
-        styles={{ backColor: 'var(--secondary)', border: '1px solid black' }}
-      />
+      <Input />
     </>
   );
 }
