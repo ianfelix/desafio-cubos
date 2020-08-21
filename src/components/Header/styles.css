@@ -1,9 +1,12 @@
+.title-header {
+  background-color: var(--text-subtitle);
+}
+
 h1 {
   color: var(--text-title);
-  background-color: var(--text-subtitle);
   height: 65px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
   font-family: 'Abel', sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }

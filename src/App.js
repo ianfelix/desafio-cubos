@@ -6,7 +6,9 @@ import Input from './components/Input';
 function App() {
   return (
     <>
-      <Header title='Movies' />
+      <div className='title-header'>
+        <Header title='Movies' />
+      </div>
       <Input />
     </>
   );
