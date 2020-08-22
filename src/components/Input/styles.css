@@ -6,16 +6,16 @@
 }
 
 input {
-  border-radius: 10px;
-  -moz-border-radius: 10px;
-  -webkit-border-radius: 10px;
-  box-shadow: 1px 1px 2px #333333;
-  -moz-box-shadow: 1px 1px 2px #333333;
-  -webkit-box-shadow: 1px 1px 2px #333333;
+  border-radius: 20px;
+  -moz-border-radius: 20px;
+  -webkit-border-radius: 20px;
+  -webkit-box-shadow: 5px 5px 13px 0px rgba(0, 0, 0, 0.34);
+  -moz-box-shadow: 5px 5px 13px 0px rgba(0, 0, 0, 0.34);
+  box-shadow: 5px 5px 13px 0px rgba(0, 0, 0, 0.34);
   background: #cccccc;
   border: none;
   outline: none;
-  height: 35px;
+  height: 45px;
   padding-left: 25px;
   font-size: large;
   width: 35rem;
@@ -29,6 +29,7 @@ input:hover {
 input::placeholder {
   color: var(--text-subtitle);
   opacity: 0.6;
+  font-family: 'Abel', sans-serif;
 }
 
 :-ms-input-placeholder {

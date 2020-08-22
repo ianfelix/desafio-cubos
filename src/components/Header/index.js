@@ -3,7 +3,7 @@ import './styles.css';
 
 const Header = ({ title }) => {
   return (
-    <div>
+    <div className='title-header'>
       <h1>{title}</h1>
     </div>
   );
