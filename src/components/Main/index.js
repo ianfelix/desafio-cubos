@@ -2,7 +2,7 @@ import React from 'react';
 import './styles.css';
 import img from './0.jpeg';
 
-const Main = ({ title }) => {
+const Main = ({ dados }) => {
   const nome = [
     'Thor: Ragnarok',
     'Mulher Maravilha',
@@ -15,16 +15,16 @@ const Main = ({ title }) => {
 
   const categorias = ['Ação', 'Aventura', 'Fantasia'];
 
-  const data = ['22/07/2020'];
+  const date = ['22/07/2020'];
 
   return (
     <>
-      {nome.map((nomeFilme) => (
-        <section key={nomeFilme} className='grid-container'>
+      {dados.map((nomeFilme) => (
+        <section key={nomeFilme.id} className='grid-container'>
           <div className='container'>
             <img src={img} alt='' />
             <a href='/' className='movie-name'>
-              {nomeFilme}
+              {nomeFilme.title}
             </a>
             <div className='rounded'>
               <span>{nota}</span>
@@ -40,7 +40,7 @@ const Main = ({ title }) => {
               dolorum dignissimos cupiditate, repellat mollitia facilis quo ex
               aperiam.
             </p>
-            {data.map((date, index) => (
+            {date.map((date, index) => (
               <span key={index} className='data'>
                 {date}
               </span>

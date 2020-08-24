@@ -24,14 +24,14 @@ function App() {
     getDataMovies();
   }, [data, newMovie]);
 
-  // React.useEffect(() => {
-  //   async function getDataImages() {
-  //     const response = await getImages.get(data[0].);
-  //     const dataImg = await response.data;
-  //     setImg(dataImg);
-  //   }
-  //   getDataImages();
-  // }, [data]);
+  React.useEffect(() => {
+    async function getDataImages() {
+      const response = await getImages.get();
+      const dataImg = await response.data;
+      setImg(dataImg);
+    }
+    getDataImages();
+  }, [data]);
 
   const handleChange = ({ target }) => {
     setNewMovie(target.value);
@@ -52,7 +52,7 @@ function App() {
         <Input value={newMovie} onChange={handleChange} />
       </form>
 
-      <Main title={data} />
+      <Main dados={data} />
     </>
   );
 }
