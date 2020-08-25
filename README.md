@@ -11,7 +11,7 @@ Desafio técnico web - processo seletivo da Cubos
 <p>
   
 <p align="center">
-App para busca de filmes feito com React
+  App para busca de filmes feito com React utilizando a API do <a href='https://www.themoviedb.org/'>ThemovieDB</a>
 <p>
 
 ### Versão 1.0
