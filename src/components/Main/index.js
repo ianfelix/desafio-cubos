@@ -41,7 +41,7 @@ const Main = ({ dados }) => {
             )}
 
             <span className='data'>
-              {moment(movie.release_date).format('L')}
+              {moment(movie.release_date).format('DD/MM/YYYY')}
             </span>
 
             <ul className='categorias'>
