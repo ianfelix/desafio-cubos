@@ -37,7 +37,7 @@ theMovieDb.common = {
   },
   validateCallbacks: function (success, error) {
     if (typeof success !== 'function' || typeof error !== 'function') {
-      throw 'success and error parameters must be functions!';
+      // throw 'success and error parameters must be functions!';
     }
   },
   validateRequired: function (args, argsReq, opt, optReq, allOpt) {
@@ -46,13 +46,13 @@ theMovieDb.common = {
     allOptional = allOpt || false;
 
     if (args.length !== argsReq) {
-      throw (
-        'The method requires  ' +
-        argsReq +
-        ' arguments and you are sending ' +
-        args.length +
-        '!'
-      );
+      // throw (
+      //   'The method requires  ' +
+      //   argsReq +
+      //   ' arguments and you are sending ' +
+      //   args.length +
+      //   '!'
+      // );
     }
 
     if (allOptional) {
@@ -62,10 +62,10 @@ theMovieDb.common = {
     if (argsReq > 2) {
       for (i = 0; i < optReq.length; i = i + 1) {
         if (!opt.hasOwnProperty(optReq[i])) {
-          throw (
-            optReq[i] +
-            ' is a required parameter and is not present in the options!'
-          );
+          // throw (
+          //   optReq[i] +
+          //   ' is a required parameter and is not present in the options!'
+          // );
         }
       }
     }

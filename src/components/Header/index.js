@@ -4,7 +4,9 @@ import './styles.css';
 const Header = ({ title }) => {
   return (
     <div className='title-header'>
-      <h1>{title}</h1>
+      <h1>
+        <a href='/'>{title}</a>
+      </h1>
     </div>
   );
 };

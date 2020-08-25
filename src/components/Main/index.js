@@ -1,22 +1,27 @@
 import React from 'react';
 import './styles.css';
+import img from '../../assets/images/notfound.jpg';
+import moment from 'moment';
 
 const Main = ({ dados }) => {
   const nota = ['75%'];
 
   const categorias = ['Ação', 'Aventura', 'Fantasia'];
 
-  const date = ['22/07/2020'];
-
   return (
     <>
       {dados.map((movie) => (
         <section key={movie.id} className='grid-container'>
           <div className='container'>
-            <img
-              src={'https://image.tmdb.org/t/p/w500' + movie.poster_path}
-              alt='Imagem não encontrada'
-            />
+            {movie.poster_path ? (
+              <img
+                src={'https://image.tmdb.org/t/p/w500' + movie.poster_path}
+                alt=''
+              />
+            ) : (
+              <img src={img} alt='Imagem não encontrada' />
+            )}
+
             <a
               href={`https://www.themoviedb.org/movie/${movie.id}&language=pt-Br`}
               className='movie-name'
@@ -25,24 +30,19 @@ const Main = ({ dados }) => {
               {movie.title}
             </a>
             <div className='rounded'>
-              <span>{nota}</span>
-            </div>
-
-            <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum
-              rem a porro odit neque consectetur error quidem veritatis
-              consequatur obcaecati cumque dolorum dignissimos cupiditate,
-              repellat mollitia facilis quo ex aperiam.Lorem ipsum dolor sit
-              amet consectetur adipisicing elit. Laborum rem a porro odit neque
-              consectetur error quidem veritatis consequatur obcaecati cumque
-              dolorum dignissimos cupiditate, repellat mollitia facilis quo ex
-              aperiam.
-            </p>
-            {date.map((date, index) => (
-              <span key={index} className='data'>
-                {date}
+              <span>
+                {Math.min(movie.vote_average).toFixed(1).replace('.', '') + '%'}
               </span>
-            ))}
+            </div>
+            {movie.overview ? (
+              <p className='description'>{movie.overview}</p>
+            ) : (
+              <p className='description'>Descrição não encontrada</p>
+            )}
+
+            <span className='data'>
+              {moment(movie.release_date).format('L')}
+            </span>
 
             <ul className='categorias'>
               {categorias.map((categoria) => (

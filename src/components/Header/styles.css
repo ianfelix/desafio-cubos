@@ -2,7 +2,7 @@
   background-color: var(--text-subtitle);
 }
 
-h1 {
+h1 a {
   color: var(--text-title);
   height: 65px;
   font-family: 'Abel', sans-serif;
