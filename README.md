@@ -48,6 +48,6 @@ Ex: yarn ou npm install
 
 <p>
 3º Depois de baixada as depedências dê start na aplicação</br>
-Ex: yarn start
+Ex: yarn start ou npm start
 </p>
 
