@@ -44,15 +44,13 @@ function App() {
 
     function successCB(genre) {
       let categoria = JSON.parse(genre).genres;
-      console.log(categoria);
 
       let genresObj = {};
-      categoria.forEach((value, index, array) => {
+      categoria.forEach((value) => {
         genresObj[value.id] = value.name;
       });
 
       setGenres(genresObj);
-      console.log(genresObj);
     }
 
     function errorCB(data) {

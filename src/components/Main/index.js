@@ -4,7 +4,6 @@ import img from '../../assets/images/notfound.jpg';
 import moment from 'moment';
 
 const Main = ({ dados, categorias }) => {
-  console.log(categorias);
   return (
     <>
       {dados.map((movie) => (
@@ -41,7 +40,11 @@ const Main = ({ dados, categorias }) => {
               {moment(movie.release_date).format('DD/MM/YYYY')}
             </span>
 
-            <ul className='categorias'></ul>
+            {movie.genre_ids.map((value) => (
+              <ul className='categorias' key={value}>
+                <li>{categorias[value]}</li>
+              </ul>
+            ))}
           </div>
         </section>
       ))}
