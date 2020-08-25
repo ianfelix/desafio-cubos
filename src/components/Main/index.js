@@ -3,11 +3,8 @@ import './styles.css';
 import img from '../../assets/images/notfound.jpg';
 import moment from 'moment';
 
-const Main = ({ dados }) => {
-  const nota = ['75%'];
-
-  const categorias = ['Ação', 'Aventura', 'Fantasia'];
-
+const Main = ({ dados, categorias }) => {
+  console.log(categorias);
   return (
     <>
       {dados.map((movie) => (
@@ -44,11 +41,7 @@ const Main = ({ dados }) => {
               {moment(movie.release_date).format('DD/MM/YYYY')}
             </span>
 
-            <ul className='categorias'>
-              {categorias.map((categoria) => (
-                <li key={categoria}>{categoria}</li>
-              ))}
-            </ul>
+            <ul className='categorias'></ul>
           </div>
         </section>
       ))}

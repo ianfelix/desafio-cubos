@@ -8,6 +8,7 @@ import Main from './components/Main';
 function App() {
   const [newMovie, setNewMovie] = React.useState('');
   const [data, setData] = React.useState([]);
+  const [genres, setGenres] = React.useState([]);
 
   const handleChange = ({ target }) => {
     setNewMovie(target.value);
@@ -38,7 +39,28 @@ function App() {
     }
   }, [newMovie]);
 
-  if (data === null) return null;
+  React.useEffect(() => {
+    theMovieDb.genres.getMovieList({ language: 'pt-BR' }, successCB, errorCB);
+
+    function successCB(genre) {
+      let categoria = JSON.parse(genre).genres;
+      console.log(categoria);
+
+      let genresObj = {};
+      categoria.forEach((value, index, array) => {
+        genresObj[value.id] = value.name;
+      });
+
+      setGenres(genresObj);
+      console.log(genresObj);
+    }
+
+    function errorCB(data) {
+      console.log('Error callback: ' + data);
+    }
+  }, []);
+
+  if (data === undefined || genres === undefined) return null;
   return (
     <>
       <Header title='Movies' />
@@ -47,7 +69,7 @@ function App() {
         <Input value={newMovie} onChange={handleChange} />
       </form>
 
-      <Main dados={data} />
+      <Main dados={data} categorias={genres} />
     </>
   );
 }
