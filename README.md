@@ -21,15 +21,15 @@ Desafio técnico web - processo seletivo da Cubos
 - [x] Consumo da API
 - [x] Poster do filme
 - [x] Nota
-- [x] Descrição 
-
+- [x] Descrição
 
 ### Versão 2.0
 
-- [ ] Categoria 
-- [ ] Modal 
-- [ ] Informação do filme 
-- [ ] Deixar App responsivo 
+- [x] Categoria
+- [ ] Criar Paginação
+- [ ] Modal
+- [ ] Informação do filme
+- [ ] Deixar App responsivo
 
 <h1>
 Instruções de uso
@@ -40,15 +40,12 @@ Instruções de uso
 Ex: git clone https://github.com/ianfelix/desafio-cubos.git
 </p>
 
-
 <p>
 2º Use o gerenciador de pacotes da sua preferência. </br>
 Ex: yarn ou npm install
 </p>
 
-
 <p>
 3º Depois de baixada as depedências dê start na aplicação. </br>
 Ex: yarn start ou npm start
 </p>
-

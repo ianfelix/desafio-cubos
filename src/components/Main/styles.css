@@ -64,17 +64,17 @@ img {
 .categorias {
   list-style: none;
   display: inline-flex;
-  margin: 10px 0 0px 20px;
+  margin: 10px 0px 0px 25px;
 }
 
 .categorias li {
-  margin-right: 10px;
   border: 1px solid var(--text-subtitle);
   border-radius: 10px;
   background-color: #fff;
   padding: 3px;
   font-size: small;
   color: var(--text-subtitle);
+  font-family: 'Lato', sans-serif;
 }
 
 .data {
