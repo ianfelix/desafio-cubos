@@ -29,25 +29,26 @@ Desafio técnico web - processo seletivo da Cubos
 - [ ] Categoria 
 - [ ] Modal 
 - [ ] Informação do filme 
+- [ ] Deixar App responsivo 
 
 <h1>
 Instruções de uso
 </h1>
 
 <p>
-1º Clone o repositório </br>
+1º Clone o repositório. </br>
 Ex: git clone https://github.com/ianfelix/desafio-cubos.git
 </p>
 
 
 <p>
-2º Use o gerenciador de pacotes da sua preferência </br>
+2º Use o gerenciador de pacotes da sua preferência. </br>
 Ex: yarn ou npm install
 </p>
 
 
 <p>
-3º Depois de baixada as depedências dê start na aplicação</br>
+3º Depois de baixada as depedências dê start na aplicação. </br>
 Ex: yarn start ou npm start
 </p>
 
