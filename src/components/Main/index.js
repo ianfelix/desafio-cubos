@@ -1,16 +1,7 @@
 import React from 'react';
 import './styles.css';
-import img from './0.jpeg';
 
 const Main = ({ dados }) => {
-  const nome = [
-    'Thor: Ragnarok',
-    'Mulher Maravilha',
-    'Como eu era antes de você',
-    'Hello mundo',
-    'Como vai você',
-  ];
-
   const nota = ['75%'];
 
   const categorias = ['Ação', 'Aventura', 'Fantasia'];
@@ -19,12 +10,19 @@ const Main = ({ dados }) => {
 
   return (
     <>
-      {dados.map((nomeFilme) => (
-        <section key={nomeFilme.id} className='grid-container'>
+      {dados.map((movie) => (
+        <section key={movie.id} className='grid-container'>
           <div className='container'>
-            <img src={img} alt='' />
-            <a href='/' className='movie-name'>
-              {nomeFilme.title}
+            <img
+              src={'https://image.tmdb.org/t/p/w500' + movie.poster_path}
+              alt='Imagem não encontrada'
+            />
+            <a
+              href={`https://www.themoviedb.org/movie/${movie.id}&language=pt-Br`}
+              className='movie-name'
+              target='_blank'
+              rel='noopener noreferrer'>
+              {movie.title}
             </a>
             <div className='rounded'>
               <span>{nota}</span>
