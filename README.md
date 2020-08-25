@@ -2,10 +2,17 @@
 Desafio Cubos
 </h1>
 
-<p>
+<p align="center">
 Desafio técnico web - processo seletivo da Cubos
 <p>
 
+<p align='center'>
+  <img width='600px' src='https://user-images.githubusercontent.com/62842327/91229619-8c6a1480-e700-11ea-8930-ecc3b42ba3e4.gif' />
+<p>
+  
+<p align="center">
+App para busca de filmes feito com React
+<p>
 
 ### Versão 1.0
 
