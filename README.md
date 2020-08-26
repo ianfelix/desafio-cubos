@@ -37,16 +37,27 @@ Instruções de uso
 </h1>
 
 <p>
-1º Clone o repositório. </br>
-Ex: git clone https://github.com/ianfelix/desafio-cubos.git
+1º Clone o repositório.
 </p>
 
+```sh
+Ex: git clone https://github.com/ianfelix/desafio-cubos.git
+```
+
+
 <p>
-2º Use o gerenciador de pacotes da sua preferência. </br>
-Ex: yarn ou npm install
+2º Use o gerenciador de pacotes da sua preferência. 
 </p>
+
+```sh
+Ex: yarn ou npm install
+```
+
 
 <p>
 3º Depois de baixada as depedências dê start na aplicação. </br>
-Ex: yarn start ou npm start
 </p>
+
+```sh
+Ex: yarn start ou npm start
+```
