@@ -11,7 +11,8 @@ Desafio técnico web - processo seletivo da Cubos
 <p>
   
 <p align="center">
-  App para busca de filmes feito com React utilizando a API do <a href='https://www.themoviedb.org/'>ThemovieDB</a>
+  App para busca de filmes feito com React utilizando a API do <a href='https://www.themoviedb.org/'>ThemovieDB</a> <br />
+  Deploy da aplicação: <a href='https://desafio-cubos.vercel.app/'>MovieFlix</a>
 <p>
 
 ### Versão 1.0
